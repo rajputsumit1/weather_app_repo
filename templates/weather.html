@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather API</title>
+</head>
+<body>
+<h2>Weather API</h2>
+<form action="/get_weather" method="post">
+    <label for="city">City Name:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="units">Unit:</label>
+    <select id="units" name="units" required>
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+        <option value="standard">Standard</option>
+    </select>
+
+    <label for="appid">App ID:</label>
+    <input type="text" id="appid" name="appid" required>
+
+    <input type="submit" value="Get Weather">
+</form>
+</body>
+</html>
